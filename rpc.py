@@ -26,7 +26,7 @@ target=df['Gender']
 target=list(target)
 df.drop('Gender',axis=1,inplace=True)
 from sklearn.ensemble import RandomForestClassifier
-#this is a comment
+#this is a pointless comment
 ##from sklearn.feature_selection import SelectFromModel
 ##clf=RandomForestClassifier(n_estimators=50,max_features='sqrt')
 ##clf.fit(df,target)
