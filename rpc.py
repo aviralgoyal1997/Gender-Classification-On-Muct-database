@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
+package=1.0.1
 df=pd.read_csv('muct76-opencv.csv')
 df.drop('tag',axis=1,inplace=True)
 df['A'], df['B'] = df['name'].str.split('-', 1).str
