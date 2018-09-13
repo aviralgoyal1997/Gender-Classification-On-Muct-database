@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
+package=1.0.1
 df=pd.read_csv('muct76-opencv.csv')
 df.drop('tag',axis=1,inplace=True)
 df['A'], df['B'] = df['name'].str.split('-', 1).str
@@ -26,6 +26,7 @@ target=df['Gender']
 target=list(target)
 df.drop('Gender',axis=1,inplace=True)
 from sklearn.ensemble import RandomForestClassifier
+#this is a pointless comment
 ##from sklearn.feature_selection import SelectFromModel
 ##clf=RandomForestClassifier(n_estimators=50,max_features='sqrt')
 ##clf.fit(df,target)
